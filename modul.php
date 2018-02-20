@@ -4,7 +4,7 @@
 * should return its sum. It is not alowed to use built-in php functions.
 */
 
-function arr_sum($arr){
+function my_sum($arr){
     $result = 0;
     foreach ($arr as $value){
         $result += $value;
@@ -19,7 +19,7 @@ function arr_sum($arr){
 * after the sixth one should be replaced by symbol *
 */
 
-function cut_str($str){
+function shortener($str){
     $arr = explode(" ", $str);
     $string = "";
     foreach ($arr as $value){
@@ -36,7 +36,7 @@ function cut_str($str){
 * is equal to the last character
 */
 
-function word_count($arr){
+function compare_ends($arr){
     $count = 0;
     foreach ($arr as $string){
         $first = $string[0];
@@ -48,7 +48,7 @@ function word_count($arr){
 
 //* Function receives a string, should return this string reversed.
 
-function str_reverse($str){
+function reverse_string($str){
     $result="";
     for ($i = strlen($str)-1; $i >= 0; $i--){
         $result .= $str[$i];        
