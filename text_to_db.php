@@ -1,4 +1,5 @@
 <?php
+//Separate text file by words and inputed it to db
 $pathToFile = ""; // Path to your file you want input to db
 $tableName = "";                    // Table name you want create 
 $hn = '';                             // Your hostname 
