@@ -2,10 +2,10 @@
 //Script separates text file by words and inserts them into db
 $pathToFile = "";                   // Path to your file you want input to db
 $tableName = "";                    // Table name you want create 
-$hn = '';                           // Your hostname 
-$db = '';                           // Your database name
-$un = '';                           // Your username to login
-$pw = '';                           // Your password 
+$hn = "";                           // Your hostname 
+$db = "";                           // Your database name
+$un = "";                           // Your username to login
+$pw = "";                           // Your password 
 $handle = fopen($pathToFile, "r");
 try {
     $pdo = new PDO("mysql:host=$hn;dbname=$db", $un, $pw);
